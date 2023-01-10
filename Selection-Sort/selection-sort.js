@@ -2,6 +2,7 @@ const selectionSort = (array) => {
   const n = array.length;
   let i, j;
   for (i = 0; i < n; i++) {
+  
     let swaping = false;
     let smallest = array[i];
     for (j = i + 1; j < n; j++) {
