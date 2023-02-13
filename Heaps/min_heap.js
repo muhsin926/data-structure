@@ -19,7 +19,7 @@ function heapify(arr, i, n) {
   }
 
   if (smallest != i) {
-    [arr[smallest], (arr[leftChild] = arr[leftChild]), arr[smallest]];
+    [arr[smallest], arr[leftChild]] = [arr[leftChild], arr[smallest]];
     heapify(arr, smallest, n);
   }
 }
