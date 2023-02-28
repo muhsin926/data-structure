@@ -42,6 +42,14 @@ function remove(heap) {
     return removeValu;
 }
 
+function secondLargest(heap){
+    if (heap[1] > heap[2] ){
+        return heap[1]
+    }else{
+        return heap[2]
+    }
+}
+
 let heap = [2, 4, 25, 67, 10];
 insert(heap, 50);
 insert(heap, 87);
@@ -49,4 +57,4 @@ insert(heap, 15);
 insert(heap, 3);
 remove(heap);
 
-console.log(heap);
+console.log(secondLargest(heap))

@@ -7,10 +7,8 @@ class Node {
 }
 
 class Trie {
-  constructor() {
-    this.root = new Node(null);
-  }
   insert(word) {
+    this.root = new Node(null)
     let current = this.root;
 
     for (let char of word) {
@@ -40,5 +38,5 @@ const trie = new Trie();
 trie.insert("hello");
 trie.insert("world");
 
-console.log(trie);
-console.log(trie.search("helloo"));
+
+console.log(trie.search("hel"));
