@@ -24,7 +24,7 @@ function heapify(arr, i, n) {
   }
 }
 
-let arr = [2, 4, 25, 67, 10];
+let arr = [2, 100, 25, 67, 10];
 
 buildHeap(arr);
 console.log(arr);

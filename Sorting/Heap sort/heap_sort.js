@@ -30,7 +30,7 @@ function swap(array, leftIndex, rightIndex) {
 
 const heapSort = (array) => {
   buildHeap(array);
-  let n = array.length - 1;
+  let n = array.len0gth - 1;
   while (n >= 1) {
     swap(array, 0, n);
     heapify(array, 0, n);
